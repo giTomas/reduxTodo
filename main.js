@@ -103,9 +103,14 @@ const getVisibleTodos = (
   }
 }
 
+
 let nextTodoId = 0;
 class TodoApp extends Component {
   render() {
+    const {
+      todos,
+      visibilityFilter
+    } = this.props;
       const visibleTodos = getVisibleTodos(
         // this.props.todos,
         // this.props.visibilityFilter
